@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="208" translatesAutoresizingMaskIntoConstraints="NO" id="A17-Kr-Ccb">
                                 <rect key="frame" x="20" y="69" width="321.33333333333331" height="23.333333333333329"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вопрос:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTc-mZ-wy9" userLabel="Question Title Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="вопрос:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="74" translatesAutoresizingMaskIntoConstraints="NO" id="pTc-mZ-wy9" userLabel="Question Title Label">
                                         <rect key="frame" x="0.0" y="0.0" width="73" height="23.333333333333332"/>
                                         <fontDescription key="fontDescription" name="YSDisplay-Medium" family="YS Display" pointSize="20"/>
                                         <color key="textColor" name="YP  White"/>
@@ -74,7 +74,7 @@
                                             </attributedString>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
@@ -96,6 +96,11 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="yes:" destination="lJm-rC-Rbv" eventType="touchUpInside" id="5uB-su-UOR"/>
                                             <action selector="yesButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CcK-2F-HxY"/>
