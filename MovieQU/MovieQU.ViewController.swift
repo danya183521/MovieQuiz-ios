@@ -104,6 +104,10 @@ final class ViewController: UIViewController {
         imageView.layer.masksToBounds = true
         imageView.layer.borderWidth = 8
         imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            
+            self.imageView.layer.borderWidth = 0
+        }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.showNextQuestionOrResults()
@@ -157,6 +161,7 @@ final class ViewController: UIViewController {
         let givenAnswer = true
         showAnswerResult(isCorrect: givenAnswer == currentQuestion.correctAnswer)
     }
+  
     
         
         @IBAction func noButtonClicked(_ sender: Any) {
